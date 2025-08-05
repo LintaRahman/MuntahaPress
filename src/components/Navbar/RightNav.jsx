@@ -55,9 +55,9 @@ const Ul = styled.ul`
     background: ${({ isHome, navbar }) =>
       isHome
         ? navbar
-          ? "rgba(103, 84, 75, 0.95)"
+          ? "rgba(28, 44, 71, 0.95)"
           : "transparent"
-        : "rgba(103, 84, 75, 0.95)"};
+        : "rgba(28, 44, 71, 0.95)"};
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@ const Ul = styled.ul`
   .sub-dropdown .dropdown {
     top: 0;
     left: 100%;
-    background: rgba(103, 84, 75, 0.95);
+    background: rgba(28, 44, 71, 0.95);
     min-width: 190px;
     opacity: 0;
     transform: translateY(-10px);

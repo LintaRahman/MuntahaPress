@@ -10,7 +10,7 @@ import Courses from "./pages/courses/courses";
 import PolicyPage from "./pages/policies/policyPage";
 // import ProjectPage from "./pages/publications/projectPage";
 import CoursePage from './pages/courses/coursespage/coursePage';
-// import TeacherBio from './pages/teachers/teacherBio';
+import TeacherBio from './pages/teachers/teacherBio';
 // import ComingSoon from "./pages/ComingSoon/ComingSoon";
 // import ScrollToTop from "./components/ScrollToTop/ScrollToTop"; // Import the ScrollToTop component
 // import Loader from "./components/Loader/Loader";
@@ -59,7 +59,7 @@ const App = () => {
         {/* <Route path="/courses/:filterType/:subCategory?" element={<Courses />} /> */}
         <Route path="/courses" element={<Courses />} />
         <Route path="/coursespage/:courseId" element={<CoursePage />} />
-        {/* <Route path="/teacherbio/:teacherName" element={<TeacherBio />} /> */}
+        <Route path="/teacherbio/:teacherName" element={<TeacherBio />} />
         <Route path="/policies/:policyId" element={<PolicyPage />} />
         {/* <Route path="/studentlife" element={<Studentlife />} /> */}
         {/* <Route path="/supportus" element={<SupportUs />} /> */}

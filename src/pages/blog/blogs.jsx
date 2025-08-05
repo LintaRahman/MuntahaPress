@@ -11,7 +11,7 @@ const Blogs = () => {
   return (
     <>
       <Navbar />
-      <Header text="Blog" img={blogImage} />
+      <Header text="Blog" img={blogImage} page="policy"/>
       <section className="blog-container">
         {blogList && blogList.length > 0 ? (
           <div className="blog-section">

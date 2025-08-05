@@ -11,12 +11,12 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  // background: ${({ navbar }) => (navbar ? 'rgba(103,84,75, 0.95)' : 'transparent')};
-  // background: rgba(103,84,75, 1);
+  // background: ${({ navbar }) => (navbar ? 'rgba(28, 44, 71, 0.95)' : 'transparent')};
+  // background: rgba(28, 44, 71, 1);
     background: ${({ isHome, navbar }) => 
     isHome 
-      ? (navbar ? 'rgba(103,84,75, 0.95)' : 'transparent')
-      : 'rgba(103,84,75, 0.95)'
+      ? (navbar ? 'rgba(28, 44, 71, 0.95)' : 'transparent')
+      : 'rgba(28, 44, 71, 0.95)'
   };
   
   color: white;
