@@ -1,0 +1,31 @@
+/* .policygrid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.policybox {
+    padding: 0 5rem;
+ border-radius: 30px;
+ height: 60vh;
+ width: 50vh;
+ background-color: var(--color-primary); 
+ text-align: left;  
+}
+
+.policybox .col1{
+    width: '30%';
+}
+
+h2 {
+    text-align: left;
+}
+
+.policybox p {
+ overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.circle {
+    list-style-type: circle;
+} */

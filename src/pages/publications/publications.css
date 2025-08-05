@@ -1,0 +1,35 @@
+.projectgrid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projectbox {
+    /* display: flex; */
+    padding: 0 5rem;
+ border-radius: 30px;
+ height: 60vh;
+ width: 50vh;
+ /* width: 60vh;
+ height: 60vh; */
+ background-color: var(--color-primary); 
+ text-align: left;  
+}
+
+.projectbox .col1{
+    width: '30%';
+}
+
+h2 {
+    text-align: left;
+}
+
+.projectbox p {
+ overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+
+ul.circle {
+    list-style-type: circle;
+}

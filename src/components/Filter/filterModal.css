@@ -1,0 +1,239 @@
+/* 
+.filter-modal {
+    display: block;
+    background-color: transparent;
+   }
+   @media (min-width: 768px) {
+    .filter-modal {
+      display: none;
+    }
+   }
+   
+   .filter-modal__wrapper {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .filter-modal__header {
+    display: flex;
+    padding: 1rem 0.5rem;
+    border-bottom-width: 1px;
+    border-bottom-color: #e4e7eb;
+    border-bottom-style: solid;
+    justify-content: flex-end;
+   }
+   
+   .filter-modal__content {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .filter-modal__actions {
+    border-top-width: 1px;
+    border-top-color: #e4e7eb;
+    border-top-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin-top: auto;
+   }
+   
+   .filter-modal__actions button {
+    border-radius: 0 30px 0 30px;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--color-primary);
+    border-color: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+   } */
+
+   /* Default styles: Full-screen modal for mobile */
+/* .filter-modal {
+  display: block;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .filter-modal {
+      display: none;
+  }
+}
+
+.filter-modal__wrapper {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .filter-modal__wrapper {
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      right: auto;
+      width: 250px; 
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e4e7eb;
+  }
+}
+
+.filter-modal__header {
+  display: flex;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #e4e7eb;
+  justify-content: flex-end;
+}
+
+.filter-modal__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.filter-modal__actions {
+  border-top: 1px solid #e4e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+.filter-modal__actions button {
+  border-radius: 0 30px 0 30px;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+} */
+
+/* Default styles: Full-screen modal for mobile */
+/* Ensure modal is hidden only for mobile, but not dropdown */
+.filter-modal {
+  display: block;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .filter-modal {
+      display: none;
+  }
+
+}
+
+/* Full-screen modal for mobile */
+.filter-modal__wrapper {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dropdown style for desktop */
+@media (min-width: 768px) {
+  .filter-modal__wrapper {
+      position: absolute;
+      margin: 0rem 5%;
+      top: 100%; /* Position it below the filter button */
+      left: 0;
+      right: auto;
+      width: 300px; /* Adjust width for dropdown */
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e4e7eb;
+      /* display: block; Ensure it is visible */
+      z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+}
+
+/* Make sure parent container is positioned correctly */
+.filter {
+  position: relative;
+  display: inline-block;
+}
+
+/* Header */
+.filter-modal__header {
+  display: flex;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #e4e7eb;
+  justify-content: flex-end;
+}
+
+/* Content */
+.filter-modal__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/* Actions (Apply Button) */
+.filter-modal__actions {
+  border-top: 1px solid #e4e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+.filter-modal__actions button {
+  border-radius: 0 30px 0 30px;
+  padding: 0.5rem;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Ensure button is clickable */
+.filter__button {
+  position: relative;
+  /* z-index: 1001; Higher than the dropdown */
+}
+
+.filters-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.filters-list h4{
+  font-weight: 600;
+}
+
+.filters-list .clear-filters-btn{
+  color: grey;
+}

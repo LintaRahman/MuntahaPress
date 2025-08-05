@@ -1,0 +1,145 @@
+
+
+.blog-container {
+  width: 100%;
+    padding: 2rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blog-section {
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    /* background-color: #f7f7f7; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center;
+    align-items: center;
+    padding: 0px 90px; */
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.blog-card-wrapper {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+
+.blog-section .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+  max-height: 500px;
+}
+
+.blog-section .card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+}
+
+.badge {
+  margin: 10px 20px 0;
+  display: inline-block;
+  background-color: var(--color-primary, #34557B);
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  max-width: fit-content;
+  text-transform: uppercase;
+}
+
+.blog-title {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 700;
+  margin: 10px ;
+  color: #222;
+}
+
+.blog-summary {
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  color: #555;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px 20px;
+  gap: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.blog-date {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+
+.blog-section  .card h2{
+    text-align: center;
+font-size: 1.1rem;
+color:var(--text-color);
+padding: 20px;
+font-weight: 600;
+}
+
+.blog-section  .card .subp{
+    font-size: .7rem;
+    /* line-height: 1.5; */
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    color: lightslategray;
+    text-align: left;
+    }
+
+.blog-section  .card p{
+font-size: 0.95rem;
+line-height: 1.5;
+padding: 0px 20px;
+margin-bottom: 20px;
+text-align: left;
+}
+
+
+.date-right {
+    float: right;
+    text-align: right;
+  }

@@ -1,0 +1,222 @@
+/* .pgcontainer{
+display: flex;
+flex-direction: column;
+} */
+
+.aboutcontainer  {
+  width: 100%;
+  padding: 1rem 3rem 4rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+.aboutcontainer ul  {
+list-style: disc;
+}
+
+.aboutcontainer h1 {    
+  text-align: left;
+  padding: 50px 10px 10px 10px ;
+  top:0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  /* margin-bottom: 1.5rem; */
+  position: relative;
+}
+
+.aboutcontainer h1::before{
+  content: '';
+  position: absolute;
+  left:-10px;
+  background-color:var(--color-primary);
+  height: 30px;
+  width: 5px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .aboutcontainer{
+padding: 2rem;
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../../assets/images/MosqueDomeInside.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+
+@media screen and (min-width: 415px){
+    .pgcontainer {
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .pgcontainer img, .two-columns img {
+        display: none;
+    } 
+    .two-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .two-columns .col1 h2 {
+        text-align: center;
+    }
+
+    
+} */
+
+.background-container {
+background-image: url('../../assets/images/Header/Headers.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.background-container h1 {
+  /* padding: 50px 0 0 0; */
+  color: white;
+  font-size: 2rem;
+    font-weight: 600;
+    padding: 0 0 50px 0;
+}
+.background-container h3 {
+  /* padding: 50px 0 0 0; */
+  color: var(--color-primary);
+  /* color: white; */
+  font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 0 0px 0;
+}
+.background-container .col3 a .col {
+  transition: transform 0.3s ease;
+}
+.background-container .col3 a .col:hover {
+  transform: translateY(-2px);
+}
+
+
+.col3 {
+  max-width: 1000px;
+  /* padding: 50px 0; */
+margin: 0 auto;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  
+  line-height: 2.5rem;
+  
+}
+
+.col3 > div {
+  background: white;
+  padding: 20px;
+  /* border-radius: 10px; */
+  height: 100%;
+}
+
+.col2 {
+  background-image: url('../../assets/images/Header/Headers.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 130px 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+.col3 .col {
+  position: relative;
+  /* width: 50%; */
+  padding: 2rem;
+  /* margin:  2rem; */
+  
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.col3 .col:hover {
+  /* box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.2); */
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.col3 h1 {
+  padding: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+ color: var(--color-primary);
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 2px 2px var(--blue-color);
+}
+
+
+@media (max-width:1100px){
+  .col3 {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+@media (max-width:750px){
+  .background-container{
+    padding: 0.5rem;
+  }
+  .col3 {
+    grid-template-columns: repeat(2, 1fr);
+
+
+    
+  }
+
+  .col3 .col{
+    padding: 1rem;
+    text-align: left;
+    min-height: 150px;
+  }
+  .col3 h3{
+    /* text-align: left; */
+          padding: 5px;
+  font-size: 0.95rem;
+  
+    line-height: 1.2rem;
+  }
+
+  .background-container h3 {
+  text-align: center;
+  }
+
+
+}

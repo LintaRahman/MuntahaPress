@@ -1,0 +1,84 @@
+.tabcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  width: 100%;
+    max-width: 1000px; /* Set your desired max width */
+  margin: 0 auto;     /* Center horizontally */
+}
+
+.tab-bar-wrapper {
+  position: relative;
+  width: 100%;
+  /* border-bottom: 3px solid var(--color-primary);  */
+}
+
+
+.ButtonGroup {
+  position: relative;
+  z-index: 2;
+}
+
+.tabwrapper {
+  width: 100%;
+  /* max-width: max-content;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  line-height: 2.5rem;
+  padding: 2rem 1rem;
+  text-align: left;
+  width: auto;
+  /* width: 100%; */
+  max-width: 1000px;
+  min-height: 300px; 
+  /* transition: all 0.3s ease; */
+  /* opacity: 0; */
+}
+
+.tabcontent.show {
+  
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+
+.tabcontent p {
+  text-align: left;
+}
+.tabcontent ul {
+  list-style-type: disc; /* ensures bullets show */
+  padding-left: 1.5rem;  /* creates indentation */
+  /* margin: 1rem 0; */
+}
+
+.tabcontent li {
+  /* margin-bottom: 0.5rem; */
+}
+.tabcontent ol {
+  list-style-type: decimal; /* Ensures numbers show */
+  padding-left: 1.5rem;     /* Adds indentation */
+  /* margin: 1rem 0; */
+}
+
+.tabcontent ol > li {
+  /* margin-bottom: 1rem; Optional: adds spacing between numbered items */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .tabcontent {
+      /* flex-direction: column; */
+      padding: 25px 15px;
+      
+    }
+  }

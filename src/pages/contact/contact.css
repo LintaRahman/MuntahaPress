@@ -1,0 +1,111 @@
+.grid3col{
+    padding: 20px 80px;
+    overflow-x: hidden;
+}
+
+.grid3col .card {
+    /* flex:1; */
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 60px 20px;
+    border-radius: 50px 0;
+    /* box-shadow: ; */
+}
+
+.grid3col .card h2{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .grid3col {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    .grid3col .card{
+        margin: 0 5px;
+        padding: 10px;
+        min-height: 10vh;
+    }
+    
+    .grid3col .card p {
+        display: none;
+    }
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+
+  }
+  
+  .contactform input {
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid  var(--color-primary);
+  
+  }
+
+  .contactform input[name="Message"] {
+    /* border: 2px solid green; */
+    /* padding: 10px; */
+    /* font-size: 16px; */
+    /* border-radius: 5px; */
+    min-height: 100px; /* If you want to make the message box taller */
+  }
+
+  textarea[name="Message"] {
+    border: 2px solid var(--color-primary);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 150px; /* Controls the height of the message box */
+    vertical-align: top; /* Makes sure text starts from the top */
+    resize: none; /* Prevents resizing of the textarea */
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+  }
+  
+  .contactform :last-child{
+    height: 50px;
+    /* margin: 0.5rem; */
+    border-radius: 20px 0;
+    padding: 0.5rem;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: white;
+    width: 100%;
+  }
+
+  .contact-info {
+    padding: 6rem 4rem 0 4rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-align: center; */
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 900px;
+  }
+
+  
+
+  @media (max-width: 615px){
+
+    .contact-info {
+      
+    padding: 6rem 4rem 0 4rem;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .contact p{ 
+      text-align: center;
+
+  }
+  }
+  

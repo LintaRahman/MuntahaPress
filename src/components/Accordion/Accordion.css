@@ -1,0 +1,90 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    /* width: 500px; */
+    
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    /* padding-bottom: 20px; */
+}
+
+.item {
+    /* background-color: var(--color-primary); */
+    margin-bottom: 5px;
+    padding: 10px 20px; /* Fixed syntax */
+    /* border-top: 2px solid var(--color-primary); */
+    border-bottom: 2px solid var(--color-primary);
+    color: #ffffff;
+    /* border-radius: 5px; */
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.title {
+    color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.content {
+    color: var(--color-primary);
+    line-height: 2.5rem;
+    max-height: 0;
+    overflow: hidden;
+    
+  opacity: 0; /* Optional: fade in effect */
+  transition: max-height 1s ease, padding 1s ease, opacity 1s ease;
+    padding: 0 10px;
+    text-align: left;
+    /* text-align: center; */
+}
+
+.content ol {
+  list-style-type: decimal; /* Ensures numbers show */
+  padding-left: 1.5rem;     /* Adds indentation */
+  /* margin: 1rem 0; */
+}
+
+.content ul {
+  list-style-type: disc; /* Ensures numbers show */
+  padding-left: 1.5rem;     /* Adds indentation */
+  /* margin: 1rem 0; */
+}
+
+.item.show {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--color-primary);
+    /* border: 1px solid var(--color-primary); */
+    color: var(--color-primary);
+}
+
+.item.show h2, .item.show span {
+    color: var(--color-primary);
+}
+
+.content.show {
+    max-height: 10000px;
+    
+    transition: max-height .7s ease-in-out, padding .7s ease-in-out;
+    color: var(--color-primary);
+    opacity: 1;
+    /* padding: 10px; */
+}
+
+
+@media (max-width: 920px) {
+    .accordion {
+    max-width: 500px;
+}
+}
