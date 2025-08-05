@@ -16,6 +16,9 @@ import TeacherBio from './pages/teachers/teacherBio';
 // import Loader from "./components/Loader/Loader";
 import Blogs from "./pages/blog/blogs";
 import BlogPage from "./pages/blog/blogPages";
+import Podcasts from "./pages/podcasts/podcasts";
+import Publications from "./pages/publications/publications";
+
 // import Studentlife from "./pages/studentlife/studentlife";
 // import SupportUs from "./pages/supportus/supportus";
 // import Volunteer from "./pages/supportus/Volunteer/volunteer";
@@ -52,10 +55,10 @@ const App = () => {
         <Route path="/aboutus" element={<About />} />
         <Route path="/meet_the_team" element={<MeetTheTeam />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/blog" element={<Blogs />} />
-        
         <Route path="/blog/:blogId" element={<BlogPage />} />
-        
+        <Route path="/podcasts" element={<Podcasts />} />
         {/* <Route path="/courses/:filterType/:subCategory?" element={<Courses />} /> */}
         <Route path="/courses" element={<Courses />} />
         <Route path="/coursespage/:courseId" element={<CoursePage />} />

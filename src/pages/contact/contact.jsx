@@ -93,7 +93,7 @@ const Contact = () => {
     <>
     <Navbar/>
     <Header text='Get in Touch' img={bgImage} page="policy" />
-    <section className="contact-info">
+    <section className=" contact-info">
       <div className="contact"><p><FontAwesomeIcon icon={faEnvelope} /> ‍Email:<br/>‍info@muntahapress.com</p> </div>
       <div className="contact"><p>‍<FontAwesomeIcon icon={faClock} />‍ Opening Times:<br/>Monday to Friday, 9:00AM - 5:00PM</p> </div>
     </section>
@@ -103,7 +103,7 @@ const Contact = () => {
      </section> */}
 
      
-<iframe
+{/* <iframe
   id="JotFormIFrame-251845331573357"
   title="Contact Form"
   onLoad={handleIframeLoad}
@@ -118,7 +118,7 @@ const Contact = () => {
     // height: "539px",
     border: "none",
   }}
-/>
+/> */}
     {/* <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
     <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251845331573357']", "https://form.jotform.com/")</script> */}
     

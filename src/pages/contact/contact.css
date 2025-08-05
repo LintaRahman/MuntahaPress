@@ -83,7 +83,7 @@
   }
 
   .contact-info {
-    padding: 6rem 4rem 0 4rem;
+    padding: 6rem 4rem 6rem 4rem;
     display:flex;
     flex-direction: row;
     align-items: center;

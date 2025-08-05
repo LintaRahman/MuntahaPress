@@ -225,16 +225,16 @@ const RightNav = ({ open }) => {
 
       {/* Support Us Dropdown */}
       <li onClick={() => handleDropdownClick("publications")}>
-        <Link to="#">
+        <Link to="/publications">
           Publications <ChevronDown size={14} className="arrow" />
         </Link>
         {(openDropdown === "publications" || !ismobile) && (
           <ul className="dropdown">
             <li>
-              <Link to="/sponsor">Muntaha Press</Link>
+              <Link to="/publications?filter=MuntahaPress">Muntaha Press</Link>
             </li>
             <li>
-              <Link to="/volunteer">Sidra Series</Link>
+              <Link to="/publications?filter=SidraSeries">Sidra Series</Link>
             </li>
           </ul>
         )}

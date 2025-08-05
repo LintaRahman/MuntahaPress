@@ -20,14 +20,14 @@ const Blog = ({ blog }) => {
       </div> */}
       {/* </section> */}
       <article className="blog-post">
-      
+      <div className="post-meta-top">
+        <span className="post-date">{blog.date}</span>
+        <span className="post-read-time"> • {blog.readingTime}</span>
+      </div>
         <h1 className="post-title">{blog.title}</h1>
       
       <div className="post-meta-top">By {blog.author}</div>
-      <div className="post-meta-top">
-        <span className="post-date">{blog.date}</span>
-        <span className="post-read-time">{blog.readingTime}</span>
-      </div>
+      
       <img  src={blog.image} className="blog-image"/>
 
       {/* <h1 className="post-title">
