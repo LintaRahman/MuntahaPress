@@ -163,15 +163,7 @@ const blogList = [
       </section>
     </>,
     },
-    {
-      id: '6',
-      title: "Annual Trip",
-      Author: "",
-      image: Dates,
-      time: "9th June 2024",
-      summary: "Our annual trip took place with a visit to London Central Mosque",
-      content: <><p>Students took part in raising money throughout Ramadan</p></>,
-    },
+
   ];
 
 export default blogList;
