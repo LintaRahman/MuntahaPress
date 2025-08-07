@@ -211,6 +211,7 @@
     max-width: 1000px;
     display: grid;
   gap: 20px;
+  font-family: "Raleway", sans-serif;
     /* grid-template-columns: 1fr 2fr; */
     margin: 0 auto;
     line-height: 2.5rem;

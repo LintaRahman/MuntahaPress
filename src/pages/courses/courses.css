@@ -30,12 +30,14 @@ ul.circle {
 }
 
 .Courses-filter-button {
+  font-family: "Raleway", sans-serif;
     color: var(--color-primary);
     background-color: white;
     padding: 10px 10px;
     margin: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: none;
   }
   
   .Courses-filter-button:hover {

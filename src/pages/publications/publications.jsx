@@ -213,9 +213,9 @@ const Publications = () => {
       <Header text="Publications" img={bgImage} page="policy" />
 
       {/* Filter Component */}
-      {/* <div className="filter-container">
+      <div className="filter-container">
         <div className="filter">
-          <Filter label="Filter">
+          {/* <Filter label="Filter">
             <div className="filters-list">
                 <h4>Course Type</h4>
                     {criteriaFilters.map((label, index) => (
@@ -265,45 +265,25 @@ const Publications = () => {
                 Clear Filters
               </button>
             </div>
-          </Filter>
+          </Filter> */}
 
           <>
             {[
               {
-                label: "All Courses",
+                label: "All Books",
                 isActive: selectedCriteria.length === 0 && !selectedSubCriteria,
                 onClick: handleClearFilters,
               },
-              // ...criteriaFilters.map((label) => ({
-              //   label,
-              //   isActive:
-              //     selectedSubCriteria === "" && selectedCriteria.includes(label),
-              //   onClick: () => handleSelectCriteria(label),
-              // })),
               {
-                label: "Qur'anic Programmes",
-                isActive: selectedSubCriteria === "Quran",
-                onClick: () => handleSelectSubCriteria("Quran"),
+                label: "Muntaha Press",
+                isActive: selectedSubCriteria === "MuntahaPress",
+                onClick: () => handleSelectSubCriteria("MuntahaPress"),
               },
               {
-                label: "Hadith Programmes",
-                isActive: selectedSubCriteria === "Hadith",
-                onClick: () => handleSelectSubCriteria("Hadith"),
-              },
-              {
-                label: "Fiqh & Aqeedah",
-                isActive: selectedSubCriteria === "fiqh",
-                onClick: () => handleSelectSubCriteria("fiqh"),
-              },
-              {
-                label: "Islamic History",
-                isActive: selectedSubCriteria === "IS",
-                onClick: () => handleSelectSubCriteria("IS"),
-              },
-              {
-                label: "Arabic",
-                isActive: selectedSubCriteria === "Arabic",
-                onClick: () => handleSelectSubCriteria("Arabic"),
+                label: "Sidra Series",
+                isActive: selectedSubCriteria === "SidraSeries",
+                onClick: () => handleSelectSubCriteria("SidraSeries"),
+              
               },
             ].map((btn, index) => (
               <button
@@ -316,7 +296,7 @@ const Publications = () => {
             ))}
           </>
         </div>
-      </div> */}
+      </div>
 
       <div >
         {/* <CourseList filteredCourses={filteredCourses} /> */}
@@ -324,6 +304,7 @@ const Publications = () => {
 
       <section className="pgcontainer">
         Publications to come....
+        {/* <PublicationsList filtered={filteredBooks} /> */}
       </section>
 
       <Footer />

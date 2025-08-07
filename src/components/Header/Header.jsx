@@ -1,6 +1,7 @@
 import React from "react";
 import PagesFallingVideo from "../../assets/videos/HeaderVideo.mp4";
 import PagesTurningVideo from "../../assets/videos/Headers.mp4";
+import HeaderVideo from "../../assets/videos/HeaderVideo3.mp4";
 import Button from "../Button/Button";
 import { Fade } from "react-awesome-reveal";
 import Wave from "../../assets/images/wave.png";
@@ -38,7 +39,7 @@ const Header = ({ text, page, img }) => {
       {page == "home" ? (
         <section className="box">
           {/* <img src={HeaderImage} /> */}
-          <video src={PagesTurningVideo} autoPlay playsInline loop muted 
+          <video src={HeaderVideo} autoPlay playsInline loop muted 
   preload="none"
   // poster={}
   >

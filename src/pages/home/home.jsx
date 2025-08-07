@@ -17,6 +17,8 @@ import HadithCalligraphy from "../../assets/images/HomePage/Hadith.png"
 import HistoryCalligraphy from "../../assets/images/HomePage/HistoryBlue.png"
 import FiqhCalligraphy from "../../assets/images/HomePage/FiqhBlue.png"
 import ArabicCalligraphy from "../../assets/images/HomePage/ArabicBlue.png"
+import logo from "../../assets/images/Muntaha.png"
+import { Link } from "react-router-dom";
 const home = () => {
   const courseBoxes = [
   { to: "/courses?type=annual", img: AnnualCalligraphy, label: "Annual Programmes" },
@@ -71,10 +73,25 @@ Our vision is to empower a generation of believers who carry the Qur’an with p
       {/* </section> */}
       {/* </div> */}
 
-      {/* <section className="background-container " style={{}}>
-        <h1>Explore our programmes</h1>
+       <section className="background-container " style={{}}>
+        <h1>Our Publishing Houses</h1>
         <div className="col3">
-        {courseBoxes.map((course, index) => (
+        <Link to='/publications?filter=MuntahaPress' >
+              <div className="col">
+              
+                <img src={logo} alt="" />
+                <h3>Muntaha Press</h3>
+              </div>
+          </Link>
+          <Link to='/publications?filter=MuntahaPress' >
+              <div className="col">
+              
+                <img src={logo} alt="" />
+                <h3>Sidra Series</h3>
+              </div>
+          </Link>
+
+        {/* {courseBoxes.map((course, index) => (
           <Link to={course.to} key={index}>
               <div className="col">
               
@@ -82,7 +99,7 @@ Our vision is to empower a generation of believers who carry the Qur’an with p
                 <h3>{course.label}</h3>
               </div>
           </Link>
-        ))}
+        ))} */}
       </div>
       </section> 
       {/* <TestimonialCarousel testimonialsData={testimonials} /> */}

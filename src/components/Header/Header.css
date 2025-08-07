@@ -166,7 +166,7 @@ padding-top: 55px;
 }
 
 .box h1{
-    /* margin-bottom: 40px; */
+    margin-bottom: 20px;
     font-size: 2.5rem;
     /* text-transform: uppercase; */
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -262,6 +262,7 @@ padding-top: 55px;
   .whitebutton { 
     background-color: transparent;
     /* text-transform: uppercase; */
+    font-family: "Raleway", sans-serif;
     color: white;
     margin-top: 20px;
     padding: 10px 20px;
