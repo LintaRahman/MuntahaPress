@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import TeachersList from "../../assets/docs/Teachers"
+import TeachersList from "../../assets/docs/Team"
 import { useNavigate, useParams } from 'react-router-dom'
 import { useMemo } from 'react'
 import allCourses from '../../assets/docs/Courses/Courses'

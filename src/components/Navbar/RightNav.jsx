@@ -247,7 +247,10 @@ const RightNav = ({ open }) => {
         <Link to="/podcasts">Podcasts</Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/articles">Articles</Link>
+      </li>
+      <li>
+        <Link to="/videos">Videos</Link>
       </li>
 
       <li>

@@ -1,25 +1,39 @@
-import React from 'react'
+import React from 'react';
 import TeamSection from "../../components/TeamMembers/TeamMembers";
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Header from "../../components/Header/Header";
 import bgImage from "../../assets/images/Header/Headers.png";
-import Teachers from '../../assets/docs/Teachers';
+import Team from '../../assets/docs/Team';
 
-const meetTheTeam = () => {
+const MeetTheTeam = () => {
+  const directors = Team.filter((member) => member.criteria === "Director");
+  const teachers = Team.filter((member) => member.criteria === "Teacher");
+
   return (
     <>
-    <Navbar />
-    {/* <div style={{height: '50px'}}></div> */}
-
+      <Navbar />
       <Header text="Meet the Team" img={bgImage} page="policy" />
-    <section className="pgcontainer">
-      <h1>Directors</h1>
-      <TeamSection  teamMembers={Teachers}/>
-    </section>
-    <Footer />
-    </>
-  )
-}
+      
+      <section className="pgcontainer">
+        {directors.length > 0 && (
+          <>
+            <h1>Directors</h1>
+            <TeamSection teamMembers={directors} />
+          </>
+        )}
 
-export default meetTheTeam
+        {teachers.length > 0 && (
+          <>
+            <h1>Teachers</h1>
+            <TeamSection teamMembers={teachers} />
+          </>
+        )}
+      </section>
+
+      <Footer />
+    </>
+  );
+};
+
+export default MeetTheTeam;

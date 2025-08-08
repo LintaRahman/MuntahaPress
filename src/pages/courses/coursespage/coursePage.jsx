@@ -28,7 +28,7 @@ import "./coursePage.css";
 import coursesList from "../../../assets/docs/Courses/Courses.jsx";
 import AnnualCourseDetails from "../../../components/CourseDetails/AnnualCourseDetails.jsx"
 import ShortCourseDetails from "../../../components/CourseDetails/ShortCourseDetails.jsx"
-import teachersBiographies from "../../../assets/docs/Teachers.jsx"
+import teachersBiographies from "../../../assets/docs/Team.jsx"
 import TeamSection from "../../../components/TeamMembers/TeamMembers.jsx";
 
 const CoursePage = () => {

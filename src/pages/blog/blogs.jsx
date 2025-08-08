@@ -17,7 +17,7 @@ const Blogs = () => {
           <div className="blog-section">
             {blogList.map((blog) => (
   <div className="blog-card-wrapper" key={blog.id}>
-    <Link to={`/blog/${blog.id}`} className="blog-card">
+    <Link to={`/articles/${blog.id}`} className="blog-card">
       <div className="card">
         <img src={blog.image} alt={blog.title} className="blog-image" />
 

@@ -35,12 +35,12 @@ const TeamSection = ({ teamMembers }) => {
         ))}
 
         {/* Blank placeholders to center the last row */}
-        {[...Array(blanks)].map((_, index) => (
+        {/* {[...Array(blanks)].map((_, index) => (
           <div
             className="team-card team-placeholder"
             key={`placeholder-${index}`}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );

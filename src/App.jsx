@@ -15,7 +15,7 @@ import TeacherBio from './pages/teachers/teacherBio';
 // import ScrollToTop from "./components/ScrollToTop/ScrollToTop"; // Import the ScrollToTop component
 // import Loader from "./components/Loader/Loader";
 import Blogs from "./pages/blog/blogs";
-import BlogPage from "./pages/blog/blogPages";
+import BlogPage from "./pages/blog/blogPages/blogPage";
 import Podcasts from "./pages/podcasts/podcasts";
 import Publications from "./pages/publications/publications";
 
@@ -55,9 +55,9 @@ const App = () => {
         <Route path="/aboutus" element={<About />} />
         <Route path="/meet_the_team" element={<MeetTheTeam />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/publications" element={<Publications />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blog/:blogId" element={<BlogPage />} />
+        <Route path="/publications/:filter?" element={<Publications />} />
+        <Route path="/articles" element={<Blogs />} />
+        <Route path="/articles/:blogId" element={<BlogPage />} />
         <Route path="/podcasts" element={<Podcasts />} />
         {/* <Route path="/courses/:filterType/:subCategory?" element={<Courses />} /> */}
         <Route path="/courses" element={<Courses />} />

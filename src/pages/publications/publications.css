@@ -1,35 +1,11 @@
-.projectgrid{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.projectbox {
-    /* display: flex; */
-    padding: 0 5rem;
- border-radius: 30px;
- height: 60vh;
- width: 50vh;
- /* width: 60vh;
- height: 60vh; */
- background-color: var(--color-primary); 
- text-align: left;  
-}
-
-.projectbox .col1{
-    width: '30%';
-}
-
-h2 {
-    text-align: left;
-}
-
-.projectbox p {
- overflow: hidden;
-  text-overflow: ellipsis;
-  /* white-space: nowrap; */
-}
-
-ul.circle {
-    list-style-type: circle;
+.publications-list {
+    max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* ✅ This enables wrapping */
+  gap: 20px;        /* Optional: adds spacing between cards */
+  justify-content: center; /* Optional: centers the cards */
+  width: 100%;
+    padding: 2rem 2rem;
+    margin: 0 auto;
 }

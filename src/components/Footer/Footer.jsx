@@ -41,7 +41,7 @@ const Footer = () => {
                         <li><Link to="/courses">Courses</Link></li>
                         <li><Link to="/publications">Publications</Link></li>
                         <li><Link to="/podcasts">Podcasts</Link></li>
-                        <li><Link to="/blog">Blogs</Link></li>
+                        <li><Link to="/articles">Articles</Link></li>
                         {/* <li><Link to="/studentlife#faqs">FAQs</Link></li> */}
                         
                         

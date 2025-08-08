@@ -1,12 +1,22 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import "./Blog.css"
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import blogList from '../../../assets/docs/Blogs';
+import './blogPage.css'
+import Navbar from '../../../components/Navbar/Navbar';
+import Footer from '../../../components/Footer/Footer';
 
-const Blog = ({ blog }) => {
+
+const BlogPage = () => {
+  const { blogId } = useParams();
+  console.log(blogId);
+  const blog = blogList.find((p) => p.id === blogId);
+
+  if (!blog) {
+    return <div>Blog not found</div>;
+  }
+
   return (
-    <>
+      <>
       <Navbar scrollVal={0}/>
       <section className="pgcontainer"></section>
       {/* <section className="pgcontainer"> */}
@@ -41,9 +51,9 @@ const Blog = ({ blog }) => {
         {blog.content}
       </section> */}
 
-      <Footer />
+     <Footer/>
     </>
   );
 };
 
-export default Blog;
+export default BlogPage;
