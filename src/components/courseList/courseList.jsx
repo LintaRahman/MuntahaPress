@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bgImage from "../../assets/images/MosqueDomeInside.png";
 import { useParams } from "react-router-dom";
-import communityProjects from "../../assets/docs/Projects";
+// import communityProjects from "../../assets/docs/Projects";
 import { Fade } from "react-awesome-reveal";
 import Button from "../Button/Button.jsx";
 import courseLists from "../../assets/docs/Courses/QuranicCourses.jsx";
